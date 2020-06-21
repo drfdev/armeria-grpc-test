@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "dev.drv.pokemon.api";
+
+enum Status {
+    UNDEFINED = 0;
+    SUCCESS = 1;
+    ERROR = 2;
+}
+
+message Error {
+    string code = 1;
+    string message = 2;
+}

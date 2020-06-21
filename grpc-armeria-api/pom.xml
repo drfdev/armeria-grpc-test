@@ -13,6 +13,7 @@
     <groupId>dev.drf.grpc.arm.api</groupId>
     <artifactId>grpc-armeria-api</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
 
 </project>

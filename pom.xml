@@ -18,6 +18,7 @@
         <protobuf.version>3.11.1</protobuf.version>
         <os-maven-plugin.version>1.6.2</os-maven-plugin.version>
         <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
+        <javax-annotation.version>1.2</javax-annotation.version>
 
         <jetty.version>9.4.27.v20200227</jetty.version>
         <spring-boot.version>2.2.4.RELEASE</spring-boot.version>
@@ -64,6 +65,12 @@
             </dependency>
 
             <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>${javax-annotation.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-bom</artifactId>
                 <version>${jetty.version}</version>
@@ -103,6 +110,11 @@
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
         </dependency>
     </dependencies>
 
