@@ -1,10 +1,18 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "dev.drv.pokemon.api";
+option java_package = "dev.drv.pokemon.model";
+
+import "model/PokemonType.proto";
+import "model/Damage.proto";
+import "model/Defence.proto";
 
 package pokemon.api;
 
 message Pokemon {
     int64 id = 1;
+    string name = 2;
+    PokemonType type = 3;
+    Damage damage = 4;
+    Defence defence = 5;
 }

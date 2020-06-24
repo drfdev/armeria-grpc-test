@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "dev.drv.pokemon.model";
+
+package pokemon.api;
+
+message Defence {
+    int64 id = 1;
+    int64 value = 2;
+}

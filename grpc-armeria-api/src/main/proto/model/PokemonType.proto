@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "dev.drv.pokemon.model";
+
+package pokemon.api;
+
+enum ElementType {
+    NONE = 0;
+    FIRE = 1;
+    WATER = 2;
+    DARK = 3;
+}
+
+message PokemonType {
+    int64 id = 1;
+    ElementType element = 2;
+}
+
