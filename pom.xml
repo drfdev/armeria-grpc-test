@@ -22,7 +22,12 @@
 
         <jetty.version>9.4.27.v20200227</jetty.version>
         <spring-boot.version>2.2.4.RELEASE</spring-boot.version>
-        <armerai.version>0.99.6</armerai.version>
+        <armerai.version>0.97.0</armerai.version>
+        <!--
+        spring boot use micrometer 1.3.2
+        armeria need newer micrometer version
+        I dont know how to import it correctly -_-"
+        -->
     </properties>
 
     <modules>
